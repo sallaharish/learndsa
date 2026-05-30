@@ -15,3 +15,20 @@ function searchElement(arr,val) {
 
 console.log(searchElement([1, 2, 2, 3, 4, 3, 2], 3
 ))
+
+
+// count the number of -ve integers in the array
+
+
+function neg(arr) {
+    // let a = arr.length;
+    let count = 0;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] < 0) {
+            count+=1
+        }
+    }
+    return count 
+}
+console.log(neg([1,2,3,2,1,2,1,-1,-2]))
+
