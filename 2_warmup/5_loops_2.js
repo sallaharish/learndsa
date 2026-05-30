@@ -32,3 +32,16 @@ function neg(arr) {
 }
 console.log(neg([1,2,3,2,1,2,1,-1,-2]))
 
+// for print largest number in array
+
+function findLargest(arr) {
+    let largest = -Infinity;
+    for (let i = 0; i <= arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i]
+        }
+    }
+    return largest
+}
+
+console.log(findLargest([1, 2, 2, 2, 123]))
