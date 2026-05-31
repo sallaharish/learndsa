@@ -45,3 +45,18 @@ function findLargest(arr) {
 }
 
 console.log(findLargest([1, 2, 2, 2, 123]))
+
+
+// for finding smallest
+
+function Smallest(num) {
+    let sma = Infinity
+    for (let i = 0; i < num.length; i++){
+        if (num[i] < sma) {
+            sma=num[i]
+        }
+    }
+    return sma
+}
+
+console.log(Smallest([1,24,-1,-2000000]))
